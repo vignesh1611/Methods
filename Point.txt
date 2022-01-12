@@ -1,0 +1,19 @@
+
+public class Point {
+	int num;
+	public Point()
+	{
+		num=100;
+		System.out.println("no argument constructor");
+	}
+	public Point(int x)
+	{
+		System.out.println("single argument constructor");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Point point = new Point();
+       System.out.println(point.num);
+	}
+
+}
