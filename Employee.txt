@@ -1,0 +1,34 @@
+// Create a employee class with read data and write data member functions
+public class Employee 
+{
+	// Employee member variables
+   int empid; 
+   String empName;
+   float empSalary;
+   String empDesg;
+   
+   // member functions
+public void readData() 
+{
+	empid = 2560;
+	empName = "Vignesh";
+	empSalary = 25000f;
+	empDesg="Project Engineer";
+}
+public void writeData()
+{
+	System.out.println(empid+" "+empName+" "+empSalary+" "+empDesg);
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Creating reference variable of an employee
+	    Employee emp;
+	    // Creating an object and assigning value
+     emp = new Employee();
+     // Calling read data function by using reference variable
+     emp.readData();
+     // Calling write data function by suing reference varible
+     emp.writeData();
+	}
+
+}
