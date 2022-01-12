@@ -1,0 +1,63 @@
+package ProGame;
+
+import java.util.Scanner;
+
+public class Hangman {
+
+	//member functions	
+	public void options()
+	{
+		System.out.println("Play the Game");
+	}	
+	public void instruction() 
+	{
+		System.out.println("Instruction for Game");
+	}
+	public void exit()
+	{
+		System.out.println("Exit from the Game");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Creating reference variable of an employee
+		Hangman hangman;
+		// Creating an object and assigning value
+		hangman = new Hangman();
+		
+		Scanner opt = new Scanner(System.in);
+		System.out.println("Options for the Game: ");
+		System.out.println("1. To PLAY GAME"+"\n"+"2.To View Instructions"+"\n"+"3. To Exit the Game "+"\n");
+		System.out.println("Enter any options");
+		int i = opt.nextInt();
+		
+		// Using IF-Else condition
+		/*if(i==1) {
+		// Calling options function by using reference variable
+		hangman.options();
+		}
+		else if(i==2) {
+		// Calling instruction function by using reference variable
+		hangman.instruction();
+		}
+		else if (i==3) {
+		// Calling exit function by using reference variable
+		hangman.exit();
+		}
+		else {
+			System.out.println("Please Enter the valid option from above");
+		}*/
+		
+		// Using Switch case Condition
+		switch(i)
+		{
+		case 1:hangman.options();
+		break;
+		case 2:hangman.instruction();
+		break;
+		case 3:hangman.exit();
+		break;
+		default:System.out.println("Please Enter the valid option from above");
+		}
+	}
+
+}
