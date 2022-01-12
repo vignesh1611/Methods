@@ -1,0 +1,28 @@
+
+public class Account {
+	float amount;
+    public void deposit(float amt)
+    {
+       amount = amount + amt;
+    }
+    public void withDrawl(float amt)
+    {
+    	amount = amount - amt;
+    }
+    public float balance()
+    {
+
+    	return amount;  	
+    }
+    public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    	Account account;
+    	account = new Account();
+    	
+    	System.out.println(account.balance());
+    	account.deposit(12000);
+    	System.out.println(account.balance());
+    	account.withDrawl(1000);	
+    	System.out.println(account.balance());
+    	}
+}
